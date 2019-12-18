@@ -40,7 +40,6 @@ function! s:should_register(language, start_pattern)
 endfunction
 
 let s:languages = [
-      \ {'name': 'less',       'tag': 'style'},
       \ {'name': 'pug',        'tag': 'template', 'attr_pattern': s:attr('lang', '\%(pug\|jade\)')},
       \ {'name': 'slm',        'tag': 'template'},
       \ {'name': 'handlebars', 'tag': 'template'},
@@ -50,6 +49,7 @@ let s:languages = [
       \ {'name': 'stylus',     'tag': 'style'},
       \ {'name': 'sass',       'tag': 'style'},
       \ {'name': 'scss',       'tag': 'style'},
+      \ {'name': 'less',       'tag': 'style'},
       \ ]
 
 for s:language in s:languages
